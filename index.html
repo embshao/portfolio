@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Em</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+      <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700|Sansita" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="./css/animate.css">
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script src="js/wow.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="./css/style.css">
+      <!--tab icon-->
+      <link rel="shortcut icon" type="image/x-icon" href="./pics/general/planet.png" />
+   </head>
+   <body>
+      <!-- Navbar (sit on top) -->
+      <div class="w3-top hidden fadeInDown" id="nav-hide">
+         <ul class="w3-navbar" id="myNavbar">
+            <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+               <a class="w3-hover-black" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+               <i class="fa fa-bars"></i>
+               </a>
+            </li>
+            <!-- <li class="w3-left-align"><a href="#home">HOME</a></li> -->
+            <li class="w3-hide-small"><a href="#about"><i class="fa fa-user"></i> ABOUT</a></li>
+            <li class="w3-hide-small"><a href="#experience"><i class="fa fa-star"></i> EXPERIENCE</a></li>
+            <li class="w3-hide-small"><a href="#portfolio"><i class="fa fa-th"></i> PORTFOLIO</a></li>
+            <li class="w3-hide-small"><a href="#contact"><i class="fa fa-envelope"></i> CONTACT</a></li>
+            <li class="w3-hide-small"><a href="#links"><i class="fa fa-globe"></i> LINKS</a></li>
+            <li class="w3-hide-small w3-right">
+               <a href="#">
+               <i class="w3-hide-small">EM BARNARD SHAO</i>
+               </a>
+            </li>
+         </ul>
+         <!-- Navbar on small screens -->
+         <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+            <ul class="w3-navbar w3-left-align w3-white">
+               <li><a href="#about" onclick="toggleFunction()">ABOUT</a></li>
+               <li><a href="#experience" onclick="toggleFunction()">EXPERIENCE</a></li>
+               <li><a href="#portfolio" onclick="toggleFunction()">PORTFOLIO</a></li>
+               <li><a href="#contact" onclick="toggleFunction()">CONTACT</a></li>
+               <!-- <li><a href="#">SEARCH</a></li> -->
+            </ul>
+         </div>
+      </div>
+      <!-- First Parallax Image with Logo Text -->
+      <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+         <div class="w3-display-topmiddle" style="white-space:nowrap;">
+             <span class="w3-center w3-xlarge w3-wide container">
+               <div class="fadeInDown animated homeImg"><img src="./pics/general/glitchCrop.gif"></div>
+            </span>  
+         </div>  
+         <!-- <div class="mobileShow"><img src="hi.gif"></div> -->
+      </div>
+      <!-- Container (About Section) -->
+      <div class="w3-content w3-container w3-padding-64 hidden fadeInUp" id="about">
+         <div class="hidden fadeInUp" id="about-h">
+            <h3 class="w3-center">ABOUT ME</h3>
+            <p class="w3-center"><em></em></p>
+            <div class="w3-row">
+               <div class="w3-col m6 w3-center w3-padding-large">
+                  <br>
+                  <img src="./pics/general/img.png" class="w3-round w3-image" alt="Photo of Me" width="225" height="200">
+               </div>
+               <!-- Hide this text on small devices -->
+               <div class="w3-col m6 w3-hide-small w3-padding-large">
+                  <p>
+                     Born in Taipei, Taiwan, I grew up learning both Mandarin and English in a multicultural household. I moved to Asheville, North Carolina, when I was 5 years-old.
+                  </p>
+                  <p>
+                     Growing up in Asheville, I developed a love for the environment, computers and art. These interests manifested at UNC-Chapel Hill where I study computer science and environmental science!
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Second Parallax Image with Portfolio Text -->
+      <div class="bgimg-2 w3-display-container w3-opacity-min">
+         <div class="w3-display-middle">
+         </div>
+      </div>
+      <!-- Experience Section -->
+      <div class="hidden fadeInUp" id="experience">
+         <div class="w3-container w3-padding-32">
+            <h3 class="w3-padding-12 w3-center">Experience</h3>
+            <p class="w3-center">Programming (Java, Python, PHP, JavaScript, C, Data Structures, SQL, phpMyAdmin, AJAX, APIs), Web Development (HTML5, CSS, Drupal, Responsive Design), Graphic Design (Adobe Illustrator, Photoshop, Indesign), Mandarin Chinese (Limited working speaking, reading and writing proficiency), Spanish (Elementary proficiency, AP level)
+            </p>
+         </div>
+         <div class="w3-row-padding  w3-center">
+            <div class="w3-col l3 m3 w3-margin-bottom">
+               <img src="./pics/experience/chapelHill.jpg" style="width:100%;" >
+               <h3 style="font-size: 18px;">University of North Carolina at Chapel Hill</h3>
+               <p class="w3-opacity">August 2014 - December 2018</p>
+               <p>Studying Computer Science with minors in Environmental Studies & Science and Visual Communication.</p>
+            </div>
+            <div class="w3-col l3 m3 w3-margin-bottom w3-center">
+               <img src="./pics/experience/redventures.jpg" style="width:100%;" >
+               <h3 style="font-size: 18px;">Red Ventures, Charlotte, NC - Associate Engineer Intern</h3>
+               <p class="w3-opacity">Summer 2018</p>
+               <p>Worked on a team of eleven engineers to create, test and revise sales’ agent platform selling deregulated energy. Built interactive dashboard for data analyzing Apple Music ads. (React, Redux, Django, D3.js, Jenkins, Stash, ES6)</p>
+            </div>
+            <div class="w3-col l3 m3 w3-margin-bottom">
+               <img src="./pics/experience/type.jpg" style="width:100%;" >
+               <h3 style="font-size: 18px;">NSF Making Science Visible — Software Engineer Intern</h3>
+               <p class="w3-opacity">Fall 2017 - April 2018</p>
+               <p>Building, testing and revising interactive visualizations for underrepresented, linguistically diverse 8th-grade students (HTML5, Canvas, CSS, Javascript, SQL, PHP)</p>
+            </div>
+            <div class="w3-col l3 m3 w3-margin-bottom w3-center">
+               <img src="./pics/experience/aVille.jpg" style="width:100%;" >
+               <h3 style="font-size: 18px;">Bitcookie, Asheville — Web Developer Intern</h3>
+               <p class="w3-opacity">Summer 2015</p>
+               <p>Created front-end, design and programming material for small web-design company, worked individually and reported to supervisor regularly (PHP, HTML, CSS, JavaScript, Drupal, Illustrator)</p>
+            </div>
+         </div>
+      </div>
+      <!-- Third Parallax Image with Portfolio Text -->
+      <div class="bgimg-2 w3-display-container w3-opacity-min">
+         <div class="w3-display-middle">
+         </div>
+      </div>
+      <!-- Container (Portfolio Section) -->
+      <div class="w3-content w3-container w3-padding-64" id="portfolio">
+         <h3 class="w3-center">MY WORK</h3>
+         <!-- 
+            <p class="w3-center"><em>Click on the images to make them bigger</em></p> -->
+      </div>
+      <!-- Photo Grid -->
+      <div class="w3-row-padding" id="myGrid" style="margin-bottom:128px">
+         <div class="w3-third">
+            <img src="./pics/code/Democracy Easy.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+            <img src="./pics/code/BlackJack.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/code/quote.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/code/weather.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/code/wiki.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/ECAASUNCDesign.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/ECAASU Triangle.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/ECAASUHoodieDesign.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/clouds.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/ECAASU Pamphlet.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/trump.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/news_layout.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/photography/ledge.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/photography/river.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/photography/wheat.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/photography/family.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/photography/kids.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">    
+         </div>
+         <div class="w3-third">
+            <img src="./pics/code/chores.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/FLOAppleCore.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/FLOGTBees.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/FLOGTMSea.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/FSUSlumber.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/KeystonePipelineInfograph.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/RadAsiansMeeting.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/FSU Flame.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/voucher.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/FLO Farmers' Market Fall '17.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/dth_comic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/photography/waterfall.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/photography/woods.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/photography/light.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/photography/bball.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/photography/tattoo.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+         </div>
+         <div class="w3-third">
+            <img src="./pics/graphic/BobaTea.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/code/scoring.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/ECAASUprofile.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/FLOFMApple.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/FLOFMCarrots.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/FSUJeopardy.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/FLOGTMWaste.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/FLO FM Block.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/Star Wars Magazine Layout.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/graphic/FLOFMBeet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+             <img src="./pics/code/8-Queens.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/photography/cheese.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/photography/church.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">               
+            <img src="./pics/photography/window.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/photography/waves.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+            <img src="./pics/photography/climb.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt=""> 
+                     
+         </div>
+      </div>
+      <!-- Modal for full size images on click-->
+      <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+         <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+         <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+         </div>
+      </div>
+      <!-- Third Parallax Image with Portfolio Text -->
+      <div class="bgimg-3 w3-display-container w3-opacity-min">
+         <div class="w3-display-middle">
+         </div>
+      </div>
+      <!-- Container (Contact Section) -->
+      <div class="w3-content w3-container w3-padding-64" id="contact">
+         <h3 class="w3-center">CONTACT ME</h3>
+         <p class="w3-center"><em>Shoot me a message</em> ;)</p>
+         <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-center w3-col m12 w3-container w3-section">
+
+           <form method="POST" action="http://formspree.io/emily.m.barnard@gmail.com">
+                  <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                     <div class="w3-half">
+                        <input class="w3-input w3-border" type="text" placeholder="Name" required name="name">
+                     </div>
+                     <div class="w3-half">
+                        <input class="w3-input w3-border" type="email" required name="_replyto" placeholder="Email">
+                     </div>
+                  </div>
+                  <textarea  cols="30" rows="8" class="w3-input w3-border" type="text" placeholder="Message" required name="message"></textarea>
+                  <button class="w3-button w3-black w3-right w3-section" type="submit">
+                  <i class="fa fa-paper-plane"></i> 
+                  </button>
+               </form>
+
+            </div>
+         </div>
+      </div>
+      <!-- Footer -->
+      <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off" id="links">
+         <a href="#home" class="w3-btn w3-padding w3-light-grey w3-hover-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+         <div class="w3-xlarge w3-section">
+            <a href="https://www.linkedin.com/in/embarnardshao" target="_blank"><i class="fa fa-linkedin w3-hover-text-indigo"></i></a>
+            <a href="" target="_blank" ><i class="fa fa-file w3-hover-text-yellow"></i></a>
+            <a href="https://github.com/embshao" target="_blank"><i class="fa fa-github w3-hover-text-green"></i></a>
+            <a href="http://codepen.io/embarnardshao/" target="_blank"><i class="fa fa-codepen w3-hover-text-black"></i></a>
+            <a href="https://www.dropbox.com/sh/hk9x62tjvljvq2o/AAB_kj2gm339UUPv_iWTPcr8a?dl=0" target="_blank"><i class="fa fa-dropbox w3-hover-text-indigo"></i></a>
+            <a href="https://soundcloud.com/embshao" target="_blank"><i class="fa fa-soundcloud w3-hover-text-orange" ></i></a>
+         </div>
+         <p>By Emily Barnard Shao, August 2018</a></p>
+      </footer>
+      <script>
+         // Modal Image Gallery
+         function onClick(element) {
+           document.getElementById("img01").src = element.src;
+           document.getElementById("modal01").style.display = "block";
+           var captionText = document.getElementById("caption");
+           captionText.innerHTML = element.alt;
+         }
+         
+         // Change style of navbar on scroll
+         window.onscroll = function() {myFunction()};
+         function myFunction() {
+             var navbar = document.getElementById("myNavbar");
+             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                 navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+             } else {
+                 navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+             }
+         }
+         
+         // Used to toggle the menu on small screens when clicking on the menu button
+         function toggleFunction() {
+             var x = document.getElementById("navDemo");
+             if (x.className.indexOf("w3-show") == -1) {
+                 x.className += " w3-show";
+             } else {
+                 x.className = x.className.replace(" w3-show", "");
+             }
+         }
+         
+         //start scroll-based animation 
+         $(window).scroll(function(){
+         
+         var x = $(document).scrollTop();
+         
+         if( x > 70){
+         $('#nav-hide').removeClass('hidden');
+         $('#nav-hide').addClass('animated');
+         }else{
+         $('#nav-hide').addClass('hidden');
+         $('#nav-hide').removeClass('animated');
+         }
+         
+         if( x > 400){
+         $('#about').removeClass('hidden');
+         $('#about-h').removeClass('hidden');
+         $('#about').addClass('animated');
+         }
+         
+         if( x > 1400){
+         $('#experience').removeClass('hidden');
+         $('#experience').addClass('animated');
+         }
+
+         if( x > 2000){
+         $('#extracurricular').removeClass('hidden');
+         $('#extracurricular').addClass('animated');
+         }
+         });
+
+         
+      </script>
+   </body>
+</html>
